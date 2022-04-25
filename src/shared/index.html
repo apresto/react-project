@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>ANTHEM</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="images/ANTHEM+LOGO.png" alt="Anthem Coffee logo" height="120" width="120" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-coffee fa-lg"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#locations"><i class="fa fa-map-marker fa-lg"></i> Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#contact-modal" href="contactus.html"><i class="fa fa-envelope fa-lg"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+                <form>
+                  <div class="row">
+                      <div class="col">
+                          <label for="firstName">First Name</label>
+                          <input type="text" id="firstName" class="form-control">
+                      </div>
+                      <div class="col">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" id="lastName" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-group mt-3">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" class="form-control">
+                  </div>
+                  <div class="form-group mt-3">
+                      <label for="message">Message</label>
+                      <Textarea class="form-control" id="message"></Textarea>
+                  </div>
+                </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h1 class="heading-text text-center">Experience Heroic Hospitality</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-5 text-center text-sm-right">
+            <a class="btn btn-primary btn-lg" href="menu.html">Menu</a>
+          </div>
+          <div class="col-sm-5 text-center text-sm-left">
+            <a class="btn btn-light btn-lg" href="#locations">Locations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h2 class="text-center font-weight-bold">Featured Menu</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card">
+            <img src="./images/caramel-macchiato.jpg" alt="Caramel Macchiato" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Caramel Macchiato</h5>
+              <h6 class="card-subtitle font-weight-bold">$4.20</h6>
+              <p class="card-text">steamed milk + vanilla marked by espresso + caramel</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card">
+            <img src="./images/van-dirty-chai.jpg" alt="Vanilla Dirty Chai" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Vanilla Dirty Chai</h5>
+              <h6 class="card-subtitle font-weight-bold">$4.20</h6>
+              <p class="card-text">vanilla or spicy chai + espresso + steamed milk</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card">
+            <img src="./images/white-caramel-mocha.jpg" alt="White Caramel Mocha" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">White Caramel Mocha</h5>
+              <h6 class="card-subtitle font-weight-bold">$4.50</h6>
+              <p class="card-text">white chocolate + caramel + espresso + milk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col text-center">
+          <a class="btn btn-primary btn-lg" href="menu.html">Full Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="locations">
+      <div class="row mt-5">
+        <div class="col">
+          <h2 class="text-center font-weight-bold">Our Locations</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3 mb-5">
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-1 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Downtown Puyallup</h1>
+            <h5 class="text-light font-weight-bold mb-4">210 W Pioneer, Puyallup, WA</h5>
+            <h5 class="text-light font-weight-bold">6am-6pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">7am-6pm Weekends</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-2 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Downtown Tacoma</h1>
+            <h5 class="text-light font-weight-bold mb-4">1911 Pacific Ave, Tacoma, WA</h5>
+            <h5 class="text-light font-weight-bold">7am-4pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">Closed Sunday</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-3 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Old Town Tacoma</h1>
+            <h5 class="text-light font-weight-bold mb-4">2312 N. 30th St. Tacoma, WA</h5>
+            <h5 class="text-light font-weight-bold">7am-4pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">8am-4pm Weekends</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-4 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Tacoma Stadium District</h1>
+            <h5 class="text-light font-weight-bold mb-4">102 N. St. Tacoma, WA</h5>
+            <h5 class="text-light font-weight-bold">7am-4pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">7am-4pm Weekends</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-5 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Point Ruston</h1>
+            <h5 class="text-light font-weight-bold mb-4">5005 Main St. #105, Tacoma, WA</h5>
+            <h5 class="text-light font-weight-bold">6am-6pm Mon-Thur</h5>
+            <h5 class="text-light font-weight-bold">7am-6pm Fri-Sun</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-6 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Sunrise Medical</h1>
+            <h5 class="text-light font-weight-bold mb-4">11102 Sunrise Blvd. E #111, Puyallup, WA</h5>
+            <h5 class="text-light font-weight-bold">7am-4pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">Closed Weekends</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-12 col-md-6">
+          <div class="bg-image bg-7 text-center p-5">
+            <h1 class="display-4 text-light font-weight-bold mb-4">Sunrise Village</h1>
+            <h5 class="text-light font-weight-bold mb-4">156th Street East, Puyallup, WA</h5>
+            <h5 class="text-light font-weight-bold">6am-6pm Weekdays</h5>
+            <h5 class="text-light font-weight-bold">7am-6pm Weekends</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- <script>
+      document.getElementById('#locations').scrollIntoView({
+        behavior: 'smooth'
+      });
+    </script> -->
+
+</body>
+</html>

@@ -25,10 +25,7 @@ class Contact extends Component {
             contactType: 'By Phone',
             feedback: '',
             touched: {
-                firstName: false,
-                lastName: false,
-                phoneNum: false,
-                email: false
+                author: false,
             }
         };
 
